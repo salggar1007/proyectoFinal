@@ -1,0 +1,43 @@
+
+f
+java:S3252!"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(ùß•Ø8Ì¬Óµ0
+X	java:S125#"<This block of commented-out lines of code should be removed.(°¼´©8Ì¬Óµ0
+N
+java:S1068	"1Remove this unused "panelInferior" private field.(£ìæÙ8Ì¬Óµ0
+K
+java:S1068
+".Remove this unused "botonSalir" private field.(‚Õëó8Ö¬Óµ0
+W
+java:S1068"5Remove this unused "botonCerrarSesion" private field.(ÈÛ®Ëøÿÿÿÿ8Ö¬Óµ0
+S
+java:S1068"1Remove this unused "panelSuperior" private field.(Ìßüÿÿÿÿ8Ö¬Óµ0
+N
+java:S1068"1Remove this unused "nombreUsuario" private field.(Ú•‰ş8Ö¬Óµ0
+M
+java:S1068"0Remove this unused "panelCentral" private field.(É“Ğ8Ö¬Óµ0
+P
+java:S1068".Remove this unused "textoFecha" private field.(—ò¡Éşÿÿÿÿ8Ö¬Óµ0
+N
+java:S1068"1Remove this unused "textoDuracion" private field.(æõÑ»8Ö¬Óµ0
+P
+java:S1068"3Remove this unused "textTipoReserva" private field.(Åœïò8Ö¬Óµ0
+R
+java:S1068"0Remove this unused "panelDerecho" private field.(ñ­„Äşÿÿÿÿ8Ö¬Óµ0
+K
+java:S1068".Remove this unused "botonCrear" private field.(Õì§ä8Ö¬Óµ0
+K
+java:S1068".Remove this unused "labelFecha" private field.(§Ï¤8Ö¬Óµ0
+L
+java:S1068"/Remove this unused "botonBorrar" private field.(©ÏÙÓ8Ö¬Óµ0
+N
+java:S1068"1Remove this unused "labelDuracion" private field.(Ü©çº8Ö¬Óµ0
+Q
+java:S1068"4Remove this unused "labelHoraEntrada" private field.(ÃÊÔ8Ö¬Óµ0
+Q
+java:S1068"4Remove this unused "labelTipoReserva" private field.(›é®´8Ö¬Óµ0
+P
+java:S1068"4Remove this unused "textoHoraEntrada" private field.(èçôQ8Ö¬Óµ0
+P
+java:S1068".Remove this unused "botonAtras" private field.(Áñ´üÿÿÿÿ8Ö¬Óµ0
+L
+java:S1068"/Remove this unused "botonAlante" private field.(øÄŠ8Ö¬Óµ0
