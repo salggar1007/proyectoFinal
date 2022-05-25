@@ -2,10 +2,9 @@ package vista.reservas;
 
 import javax.swing.*;
 
-public class Reserva {
+public class InterfazReserva {
     private JFrame ventanaReservas;
     private JPanel panelPrincipal;
-    private JLabel labelPrueba;
     private JPanel panelInferior;
     private JButton botonSalir;
     private JButton botonCerrarSesion;
@@ -14,19 +13,20 @@ public class Reserva {
     private JPanel panelCentral;
     private JTextField textoFecha;
     private JTextField textoDuracion;
-    private JTextField textTipoReserva;
+    private JTextField textoTipoReserva;
     private JPanel panelDerecho;
     private JButton botonCrear;
     private JLabel labelFecha;
     private JButton botonBorrar;
     private JLabel labelDuracion;
     private JLabel labelHoraEntrada;
-    private JLabel labelTipoReserva;
     private JTextField textoHoraEntrada;
     private JButton botonAtras;
     private JButton botonAlante;
+    private JLabel labelNombreUsuario;
+    private JRadioButton radioBotonTipoReserva;
 
-    public Reserva () {
+    public InterfazReserva() {
         ventanaReservas = new JFrame("Aplicación reservas");
         ventanaReservas.setContentPane(panelPrincipal);
         ventanaReservas.setSize(500,400);
@@ -40,11 +40,35 @@ public class Reserva {
         return ventanaReservas;
     }
 
-    public JLabel getLabelPrueba() {
-        return labelPrueba;
+    public JButton getBotonCrear() {
+        return botonCrear;
+    }
+
+    public JTextField getTextoFecha() {
+        return textoFecha;
+    }
+
+    public JTextField getTextoDuracion() {
+        return textoDuracion;
+    }
+
+    public JTextField getTextoTipoReserva() {
+        return textoTipoReserva;
+    }
+
+    public JTextField getTextoHoraEntrada() {
+        return textoHoraEntrada;
+    }
+
+    public JLabel getLabelNombreUsuario() {
+        return labelNombreUsuario;
+    }
+
+    public JRadioButton getRadioBotonTipoReserva() {
+        return radioBotonTipoReserva;
     }
 
     public static void main(String[] args) {
-        new Reserva();
+        new InterfazReserva();
     }
 }
