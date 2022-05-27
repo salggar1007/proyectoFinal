@@ -1,0 +1,31 @@
+
+_
+java:S3252""IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(ùß•Ø
+Q	java:S125$"<This block of commented-out lines of code should be removed.(°¼´©
+G
+java:S1068"1Remove this unused "panelInferior" private field.(£ìæÙ
+D
+java:S1068	".Remove this unused "botonSalir" private field.(‚Õëó
+P
+java:S1068
+"5Remove this unused "botonCerrarSesion" private field.(ÈÛ®Ëøÿÿÿÿ
+L
+java:S1068"1Remove this unused "panelSuperior" private field.(Ìßüÿÿÿÿ
+G
+java:S1068"1Remove this unused "nombreUsuario" private field.(Ú•‰þ
+F
+java:S1068"0Remove this unused "panelCentral" private field.(É“Ð
+K
+java:S1068"0Remove this unused "panelDerecho" private field.(ñ­„Äþÿÿÿÿ
+D
+java:S1068".Remove this unused "labelFecha" private field.(§Ï¤
+E
+java:S1068"/Remove this unused "botonBorrar" private field.(©ÏÙÓ
+G
+java:S1068"1Remove this unused "labelDuracion" private field.(Ü©çº
+J
+java:S1068"4Remove this unused "labelHoraEntrada" private field.(ÃÊÔ
+I
+java:S1068".Remove this unused "botonAtras" private field.(Áñ´üÿÿÿÿ
+E
+java:S1068"/Remove this unused "botonAlante" private field.(øÄŠ
