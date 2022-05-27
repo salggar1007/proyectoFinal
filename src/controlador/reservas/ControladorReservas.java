@@ -7,9 +7,11 @@ import modelo.dao.reserva.TipoReserva;
 import modelo.dao.usuario.Usuario;
 import modelo.dao.usuario.UsuarioDAO;
 import modelo.dao.usuario.UsuarioDAOImpl;
+import vista.logueo.Login;
 import vista.reservas.InterfazReserva;
 
 import javax.naming.spi.ResolveResult;
+import javax.swing.*;
 import java.sql.SQLException;
 import java.time.LocalDate;
 
@@ -17,13 +19,11 @@ public class ControladorReservas{
     private ReservaDAO modelo;
     private InterfazReserva vista;
     private Usuario usuario;
-    private UsuarioDAO usuarioDAO;
 
     public ControladorReservas(Usuario usuario) {
         this.modelo = new ReservaDAOImpl();
         this.vista = new InterfazReserva();
         this.usuario = usuario;
-        this.usuarioDAO = new UsuarioDAOImpl();
         inicializarVista();
     }
 
@@ -34,12 +34,14 @@ public class ControladorReservas{
 
     public void inicializarControlador() {
         vista.getBotonCrear().addActionListener(actionEvent -> crearReserva());
+        vista.getBotonSalir().addActionListener(actionEvent -> salirApp());
+        vista.getBotonCerrarSesion().addActionListener(actionEvent -> cerrarSesion());
     }
 
     private void crearReserva() {
         try {
             String fecha = vista.getTextoFecha().getText().trim();
-            helpers.Fechas.convertirFechasReservas(fecha);
+            //helpers.Fechas.convertirFechasReservas(fecha);
             LocalDate fechaNueva = helpers.Fechas.fechaCorrecta(fecha);
             if (fechaNueva == null){
                 vista.getLabelError().setVisible(true);
@@ -56,5 +58,15 @@ public class ControladorReservas{
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    private void cerrarSesion() {
+    }
+
+    private void salirApp() {
+        int opcion = JOptionPane.showConfirmDialog(null, "¿Estás seguro de salir?",
+                "SALIR", JOptionPane.YES_NO_OPTION);
+        if (opcion == 0)
+            System.exit(0);
     }
 }

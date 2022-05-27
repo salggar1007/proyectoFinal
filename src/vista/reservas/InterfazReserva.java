@@ -74,6 +74,14 @@ public class InterfazReserva {
         return labelError;
     }
 
+    public JButton getBotonSalir() {
+        return botonSalir;
+    }
+
+    public JButton getBotonCerrarSesion() {
+        return botonCerrarSesion;
+    }
+
     public static void main(String[] args) {
         new InterfazReserva();
     }

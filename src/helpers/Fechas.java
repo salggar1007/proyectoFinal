@@ -4,6 +4,7 @@ import vista.reservas.InterfazReserva;
 
 import java.time.*;
 import java.util.Date;
+import java.util.Objects;
 
 public class Fechas {
     public static Date convertirFormatoFechas(LocalDate localDate) {
@@ -13,12 +14,18 @@ public class Fechas {
 
         return date;
     }
-    public static boolean convertirFechasReservas(String fechaTexto){
-        fechaTexto.replace("/" , "-");
-        return fechaTexto.matches("[1-9]{1,2}-[1-9]{1,2}-[1-9]{1,4}]");
-    }
+    /*public static boolean convertirFechasReservas(String fechaTexto){
+        if (fechaTexto.matches("[a-zA-Z]") || fechaTexto == null){
+            return false;
+        }
+        return true;
+    }*/
     public static LocalDate fechaCorrecta(String fechaTexto) {
-        String[]tokken = fechaTexto.split("-");
+        if (Objects.equals(fechaTexto, "")){
+            return null;
+        }
+        String fechaNueva = fechaTexto.replaceAll("/" , "-");
+        String[]tokken = fechaNueva.split("-");
         int dia = Integer.parseInt(tokken[0]);
         int mes = Integer.parseInt(tokken[1]);
         int anno = Integer.parseInt(tokken[2]);
