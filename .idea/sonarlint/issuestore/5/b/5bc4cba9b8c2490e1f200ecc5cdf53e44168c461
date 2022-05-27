@@ -3,3 +3,7 @@ w
 java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "date".(…Øˆ‰şÿÿÿÿ
 U
 java:S1118":Add a private constructor to hide the implicit public one.(Éò§»ûÿÿÿÿ
+F
+java:S2201"+The return value of "replace" must be used.(·æºøÿÿÿÿ
+V
+java:S1128";Remove this unused import 'vista.reservas.InterfazReserva'.(Ş§òóøÿÿÿÿ

@@ -39,9 +39,16 @@ public class ControladorReservas{
     private void crearReserva() {
         try {
             String fecha = vista.getTextoFecha().getText().trim();
+            helpers.Fechas.convertirFechasReservas(fecha);
+            LocalDate fechaNueva = helpers.Fechas.fechaCorrecta(fecha);
+            if (fechaNueva == null){
+                vista.getLabelError().setVisible(true);
+                return;
+            }
+            vista.getLabelError().setVisible(false);
             String duracion = vista.getTextoDuracion().getText();
             String horaEntrada = vista.getTextoHoraEntrada().getText();
-            Reserva reserva = new Reserva(LocalDate.parse(fecha),
+            Reserva reserva = new Reserva(fechaNueva,
                     Integer.parseInt(duracion), Integer.parseInt(horaEntrada), usuario.getDni());
             if (vista.getRadioBotonTipoReserva().isSelected())
                 reserva.setTipoReserva(TipoReserva.NO_GUIADA);
